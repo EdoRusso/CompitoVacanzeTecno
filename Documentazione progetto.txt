@@ -1,0 +1,2 @@
+Questo progetto vuole creare un sorta di green pass. Ovvero l' utente inserendo i sui dati,potra ottenre un qr code che potra essere utilizzato come un normale green pass.
+I dati verrano salvati su file e per generare i qr code, il programma preleverà i dati,che sono stati salvati su un file,al momento della compilazione dei vari campi da parte dell' utente.
