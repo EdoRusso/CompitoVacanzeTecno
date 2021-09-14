@@ -1,0 +1,33 @@
+﻿<Window x:Class="EsTecnoVacanze.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EsTecnoVacanze"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="1.064,0.212">
+        <TextBox x:Name="txtnome" HorizontalAlignment="Left" Margin="24,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="56"/>
+        <TextBox x:Name="txtcognome" HorizontalAlignment="Left" Margin="247,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="56"/>
+        <TextBox x:Name="txtcodice" HorizontalAlignment="Left" Margin="247,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="45"/>
+        <TextBox x:Name="txtnascita" HorizontalAlignment="Left" Margin="24,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="45"/>
+        <Label x:Name="lblnome" Content="Inserire nome" HorizontalAlignment="Left" Margin="24,18,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label x:Name="lblcodice" Content="Inserire il codice fiscale" HorizontalAlignment="Left" Margin="231,159,0,0" VerticalAlignment="Top" Width="142"/>
+        <Label x:Name="lblnascita" Content="Inserire la propria data di nascita" HorizontalAlignment="Left" Margin="24,159,0,0" VerticalAlignment="Top" Width="194"/>
+        <Label x:Name="lblcognome" Content="Inserire il cognome" HorizontalAlignment="Left" Margin="247,25,0,0" VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="btnsalvapersona" Content="Salva dati persona su file" HorizontalAlignment="Left" Margin="248,329,0,0" VerticalAlignment="Top" Height="86" Width="144" Click="btnsalvapersona_Click"/>
+        <Button x:Name="btnqr" Content="Genera qr persona registrata" HorizontalAlignment="Left" Margin="630,18,0,0" VerticalAlignment="Top" Height="66" Width="160" Click="btnqr_Click"/>
+        <ListView x:Name="list_scelta" Margin="433,139,10,1" SelectionChanged="list_scelta_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Image x:Name="img_qr" HorizontalAlignment="Left" Height="118" Margin="433,10,0,0" VerticalAlignment="Top" Width="163"/>
+        <TextBox x:Name="txtndose" HorizontalAlignment="Left" Margin="23,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="50"/>
+        <Label x:Name="lbldose" Content="Inserire n dose ricevute" HorizontalAlignment="Left" Margin="23,273,0,0" VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="txttipovaccino" HorizontalAlignment="Left" Margin="248,273,0,0" Text="Inserire il tipo di vaccino ricevuto " TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="39"/>
+
+    </Grid>
+</Window>
